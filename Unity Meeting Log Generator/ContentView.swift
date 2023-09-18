@@ -31,6 +31,7 @@ struct ContentView: View {
     func onClickSendButton() {
         print("Send")
         let request = Request(model: "gpt-4", messages: [
+            RequestMessage(role:"system", content: PromptConstants.SetupContext),
             RequestMessage(role:"user", content: textInputs)
         ])
         let jsonEnconder = JSONEncoder()
