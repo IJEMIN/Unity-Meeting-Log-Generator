@@ -18,11 +18,11 @@ struct ContentView: View {
                 .onChange(of: apiKeyText, perform: { value in
                     UserDefaults.standard.set(apiKeyText, forKey: "API-KEY")
             })
-            TextField("Enter", text: $textInputs, axis: .vertical).lineLimit(5...1000)
+            TextField("전체 회의 로그", text: $textInputs, axis: .vertical).lineLimit(5...)
             Button(action: onClickSendButton){
-                Text("Send")
+                Text("회의 노트 생성하기")
             }
-            TextField("Output", text: $outputText)
+            TextField("생성된 노트", text: $outputText, axis: .vertical).lineLimit(5...)
         }
         .padding()
         
