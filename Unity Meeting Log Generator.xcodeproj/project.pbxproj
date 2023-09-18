@@ -11,6 +11,9 @@
 		F83420C82AB81F2D00808F88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83420C72AB81F2D00808F88 /* ContentView.swift */; };
 		F83420CA2AB81F2E00808F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83420C92AB81F2E00808F88 /* Assets.xcassets */; };
 		F83420CD2AB81F2E00808F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83420CC2AB81F2E00808F88 /* Preview Assets.xcassets */; };
+		F83420D52AB8209100808F88 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83420D42AB8209100808F88 /* Prompts.swift */; };
+		F83420D72AB8220400808F88 /* OpenAITypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83420D62AB8220400808F88 /* OpenAITypes.swift */; };
+		F83420D92AB8253C00808F88 /* Terminologies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83420D82AB8253C00808F88 /* Terminologies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,10 @@
 		F83420C92AB81F2E00808F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F83420CC2AB81F2E00808F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F83420CE2AB81F2E00808F88 /* Unity_Meeting_Log_Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Unity_Meeting_Log_Generator.entitlements; sourceTree = "<group>"; };
+		F83420D42AB8209100808F88 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
+		F83420D62AB8220400808F88 /* OpenAITypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAITypes.swift; sourceTree = "<group>"; };
+		F83420D82AB8253C00808F88 /* Terminologies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminologies.swift; sourceTree = "<group>"; };
+		F83420DA2AB82D7900808F88 /* Unity-Meeting-Log-Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Unity-Meeting-Log-Generator-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +59,15 @@
 		F83420C42AB81F2D00808F88 /* Unity Meeting Log Generator */ = {
 			isa = PBXGroup;
 			children = (
+				F83420DA2AB82D7900808F88 /* Unity-Meeting-Log-Generator-Info.plist */,
 				F83420C52AB81F2D00808F88 /* Unity_Meeting_Log_GeneratorApp.swift */,
 				F83420C72AB81F2D00808F88 /* ContentView.swift */,
 				F83420C92AB81F2E00808F88 /* Assets.xcassets */,
 				F83420CE2AB81F2E00808F88 /* Unity_Meeting_Log_Generator.entitlements */,
 				F83420CB2AB81F2E00808F88 /* Preview Content */,
+				F83420D42AB8209100808F88 /* Prompts.swift */,
+				F83420D62AB8220400808F88 /* OpenAITypes.swift */,
+				F83420D82AB8253C00808F88 /* Terminologies.swift */,
 			);
 			path = "Unity Meeting Log Generator";
 			sourceTree = "<group>";
@@ -139,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83420D92AB8253C00808F88 /* Terminologies.swift in Sources */,
 				F83420C82AB81F2D00808F88 /* ContentView.swift in Sources */,
+				F83420D72AB8220400808F88 /* OpenAITypes.swift in Sources */,
+				F83420D52AB8209100808F88 /* Prompts.swift in Sources */,
 				F83420C62AB81F2D00808F88 /* Unity_Meeting_Log_GeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +288,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Unity-Meeting-Log-Generator-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +316,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Unity-Meeting-Log-Generator-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
